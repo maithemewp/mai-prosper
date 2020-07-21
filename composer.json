@@ -1,0 +1,19 @@
+{
+    "name": "maithemewp/mai-prosper",
+    "authors": [
+        {
+            "name": "BizBudding",
+            "email": "team@bizbudding.com"
+        }
+    ],
+    "require": {
+        "maithemewp/mai-installer": "dev-master"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-order": true
+    },
+    "minimum-stability": "dev"
+}
