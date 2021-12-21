@@ -32,7 +32,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '63dc822c1d07507f10386ad474841d9703b6ecb7',
+    'reference' => 'b0a28d44252fc4db2b61d096e36d24e4ae4b2122',
     'name' => 'maithemewp/mai-prosper',
   ),
   'versions' => 
@@ -54,7 +54,7 @@ private static $installed = array (
       array (
         0 => '9999999-dev',
       ),
-      'reference' => 'a0ced9836671d1374ed5d7f47e63ca313f5f54b9',
+      'reference' => '21949732f1ea21d81500bdda8f882ac7eb0f98af',
     ),
     'maithemewp/mai-installer' => 
     array (
@@ -64,7 +64,7 @@ private static $installed = array (
       array (
         0 => '9999999-dev',
       ),
-      'reference' => 'ce7076e94e56d8f179a4bb9b0b8942e525bf5d25',
+      'reference' => '244cf7604a6b34a4662c29385497d4257f175956',
     ),
     'maithemewp/mai-prosper' => 
     array (
@@ -73,7 +73,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '63dc822c1d07507f10386ad474841d9703b6ecb7',
+      'reference' => 'b0a28d44252fc4db2b61d096e36d24e4ae4b2122',
     ),
   ),
 );

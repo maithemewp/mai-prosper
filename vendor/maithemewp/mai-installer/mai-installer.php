@@ -7,7 +7,7 @@
  * @author    BizBudding
  * @copyright Copyright © 2020 BizBudding
  * @license   GPL-2.0-or-later
- * @version   1.3.0
+ * @version   1.5.0
  */
 
 /**
@@ -36,8 +36,11 @@ function mai_plugin_dependencies() {
 		return;
 	}
 
-	// Filter dependencies for use in engine plugin.
-	$config = apply_filters( 'mai_plugin_dependencies', [
+	if ( ! ( is_admin() && current_user_can( 'install_plugins' ) ) ) {
+		return;
+	}
+
+	$config = [
 		[
 			'name'     => 'Mai Engine',
 			'host'     => 'github',
@@ -45,11 +48,10 @@ function mai_plugin_dependencies() {
 			'uri'      => 'maithemewp/mai-engine',
 			'branch'   => 'master',
 			'optional' => false,
-		],
-	] );
+		]
+	];
 
-	// Install and active dependencies.
-	WP_Dependency_Installer::instance( __DIR__ )->register( $config )->run();
+	WP_Dependency_Installer::instance( get_stylesheet_directory() )->register( $config )->run();
 }
 
 add_action( 'admin_init', 'mai_theme_redirect', 100 );
