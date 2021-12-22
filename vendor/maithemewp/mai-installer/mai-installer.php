@@ -7,7 +7,7 @@
  * @author    BizBudding
  * @copyright Copyright © 2020 BizBudding
  * @license   GPL-2.0-or-later
- * @version   1.5.0
+ * @version   1.6.0
  */
 
 /**
@@ -32,6 +32,10 @@ add_action( 'after_setup_theme', 'mai_plugin_dependencies' );
  * @return void
  */
 function mai_plugin_dependencies() {
+	if ( ! ( class_exists( 'WP_Dependency_Installer' ) && class_exists( 'Mai_Engine' ) ) ) {
+		require_once __DIR__ . '/vendor/autoload.php';
+	}
+
 	if ( ! class_exists( 'WP_Dependency_Installer' ) ) {
 		return;
 	}
@@ -51,7 +55,7 @@ function mai_plugin_dependencies() {
 		]
 	];
 
-	WP_Dependency_Installer::instance( get_stylesheet_directory() )->register( $config )->run();
+	WP_Dependency_Installer::instance( __DIR__ )->register( $config )->run();
 }
 
 add_action( 'admin_init', 'mai_theme_redirect', 100 );
