@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '5241cacb55195eb1faf6599d871f22b372391a0b',
+    'reference' => '9e862319892847ddb5d24381e47a7348ce26403c',
     'name' => 'maithemewp/mai-prosper',
   ),
   'versions' => 
@@ -26,7 +26,7 @@
       array (
         0 => '9999999-dev',
       ),
-      'reference' => '44561c1f7bb4bb0022787bb44974b573b2bca72d',
+      'reference' => '399fec687a9459b774c1bd1c44a38a806dfa052f',
     ),
     'maithemewp/mai-prosper' => 
     array (
@@ -35,7 +35,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '5241cacb55195eb1faf6599d871f22b372391a0b',
+      'reference' => '9e862319892847ddb5d24381e47a7348ce26403c',
     ),
   ),
 );

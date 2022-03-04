@@ -27,24 +27,24 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'dev-develop',
-    'version' => 'dev-develop',
+    'pretty_version' => '1.7.0',
+    'version' => '1.7.0.0',
     'aliases' => 
     array (
     ),
-    'reference' => 'ce3045058e2cd82f97c3d12dbd302615c695f587',
+    'reference' => NULL,
     'name' => 'maithemewp/mai-installer',
   ),
   'versions' => 
   array (
     'afragen/wp-dependency-installer' => 
     array (
-      'pretty_version' => '4.3.2',
-      'version' => '4.3.2.0',
+      'pretty_version' => '4.3.4',
+      'version' => '4.3.4.0',
       'aliases' => 
       array (
       ),
-      'reference' => '707d659fcbf690999dde8d5a4359e32e0675cf98',
+      'reference' => 'd13c7f2caab8781758c46ebef508953ce98259db',
     ),
     'afragen/wp-dismiss-notice' => 
     array (
@@ -57,12 +57,12 @@ private static $installed = array (
     ),
     'maithemewp/mai-installer' => 
     array (
-      'pretty_version' => 'dev-develop',
-      'version' => 'dev-develop',
+      'pretty_version' => '1.7.0',
+      'version' => '1.7.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'ce3045058e2cd82f97c3d12dbd302615c695f587',
+      'reference' => NULL,
     ),
   ),
 );
